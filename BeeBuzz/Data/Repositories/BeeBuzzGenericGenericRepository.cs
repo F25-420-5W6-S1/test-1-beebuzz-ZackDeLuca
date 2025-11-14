@@ -1,5 +1,5 @@
 ﻿using BeeBuzz.Data.Interfaces;
-using BeeBuzz.Data;
+using BeeBuzz.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace BeeBuzz.Data.Repositories
@@ -41,7 +41,17 @@ namespace BeeBuzz.Data.Repositories
             }
         }
 
+        public Task<List<Beehive>> GetBeehivesByUsers(int userId)
+        {
+            throw new NotImplementedException();
+        }
+
         public T GetById(object id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<List<ApplicationUser>> GetUsersByOrganizationAsync(int organizationId)
         {
             throw new NotImplementedException();
         }
